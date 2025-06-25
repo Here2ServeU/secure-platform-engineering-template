@@ -1,0 +1,71 @@
+# Terraform & Terragrunt
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+.terragrunt-cache/
+terraform.tfvars.lock.hcl
+
+# Kubernetes secrets and manifests that may contain sensitive info
+*.secret.yaml
+*.secrets.yaml
+kubernetes/backstage-secrets.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.env
+.env/
+.venv/
+venv/
+*.log
+logs/
+*.sqlite
+*.db
+
+# Python dependency files
+pip-log.txt
+*.egg-info/
+dist/
+build/
+
+# Node.js (Backstage)
+node_modules/
+yarn.lock
+npm-debug.log
+.backstage-build/
+.backstage-cache/
+
+# VS Code and IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# System Files
+Thumbs.db
+ehthumbs.db
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# CI/CD outputs
+*.out
+*.coverage
+*.retry
+coverage/
+*.tgz
+
+# Ignore secrets or credentials
+*.pem
+*.key
+*.crt
+*.jks
+secrets/
+*.env.local
+.env.*.local

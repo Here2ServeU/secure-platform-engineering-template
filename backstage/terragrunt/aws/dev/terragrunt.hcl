@@ -1,5 +1,5 @@
 terraform {
-  source = "../../../terraform/aws/modules/backstage"
+  source = "../../../terraform/aws"
 }
 
 inputs = {
