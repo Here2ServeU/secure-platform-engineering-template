@@ -76,6 +76,35 @@ This will create:
 - Networking resources (VPCs, subnets)
 - Storage and secrets support
 
+
+---
+
+### Step 3: Configure Kubernetes Access on Your Local Machine
+
+After provisioning your Kubernetes cluster with Terragrunt, you need to set up your local machine to connect to it using `kubectl`.
+
+#### For AWS (EKS)
+```bash
+aws eks --region <your-region> update-kubeconfig --name <your-cluster-name>
+```
+
+#### For Azure (AKS)
+```bash
+az aks get-credentials --resource-group <your-resource-group> --name <your-cluster-name>
+```
+
+#### For Google Cloud (GKE)
+```bash
+gcloud container clusters get-credentials <your-cluster-name> --region <your-region> --project <your-project-id>
+```
+
+Once configured, verify with:
+```bash
+kubectl get nodes
+```
+
+You should see the list of cluster nodes. You're now ready to deploy workloads to your cloud Kubernetes cluster from your local machine.
+
 ---
 
 ## Deploy Developer Platform
