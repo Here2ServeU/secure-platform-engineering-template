@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1beta2
+kind: Template
+metadata:
+  name: emmanuel-template
+spec:
+  owner: platform-team
+  type: service

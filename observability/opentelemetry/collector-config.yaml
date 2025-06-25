@@ -1,0 +1,8 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+exporters:
+  logging:
+    loglevel: debug

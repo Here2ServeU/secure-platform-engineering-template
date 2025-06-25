@@ -1,0 +1,11 @@
+# Basic requirements for AI tools in Python
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyter
+notebook
+ipython
+pyyaml
+# Add more packages as needed for your project
